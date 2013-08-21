@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Merriweather'), url('http://themes.googleusercontent.com/static/fonts/merriweather/v4/RFda8w1V0eDZheqfcyQ4EKRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url('http://themes.googleusercontent.com/static/fonts/merriweather/v4/ZvcMqxEwPfh2qDWBPxn6nmB7wJ9CoPCp9n30ZBThZ1I.woff') format('woff');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url('http://themes.googleusercontent.com/static/fonts/merriweather/v4/ZvcMqxEwPfh2qDWBPxn6nhAPw1J91axKNXP_-QX9CC8.woff') format('woff');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Merriweather Heavy'), local('Merriweather-Heavy'), url('http://themes.googleusercontent.com/static/fonts/merriweather/v4/ZvcMqxEwPfh2qDWBPxn6nrsSoz0gOrwseB_671fuXgU.woff') format('woff');
+}
+
+.mceContentBody h1, .mceContentBody h2, .mceContentBody h3, .mceContentBody h4, .mceContentBody h5, .mceContentBody h6 {
+    font-size: 100%;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: normal;
+    color: #4c4c4c;
+}
+
+.mceContentBody h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+.mceContentBody h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+.mceContentBody h3,
+.mceContentBody h4,
+.mceContentBody h5,
+.mceContentBody h6 {
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+.mceContentBody h3 { font-size: 18px }
+.mceContentBody h4 { font-size: 16px }
+.mceContentBody h5 { font-size: 14px }
+.mceContentBody h6 {
+    font-size: 13px;
+    color: #bfbfbf;
+    text-transform: uppercase;
+}
+
+.mceContentBody {
+	font: 14px/24px "Merriweather", Georgia, serif;
+}
+
+.mceContentBody p {
+	margin-bottom: 15px 
+}
+
+.mceContentBody blockquote p {
+	 position: relative;
+    font-family: 'Merriweather', Georgia, serif;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 15px 0 15px 30px; 
+    margin: 25px 0;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+
+.mceContentBody li {
+	list-style-type: square;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+.mceContentBody ol li {
+	list-style-type: decimal;
+	background: none;
+	padding-left: 0px;
+	margin-bottom: 5px;
+}
+
+.intro {
+	color: #979797;
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 15px;
+	border-top: solid 1px #EEE;
+	border-bottom: solid 1px #EEE;
+	padding: 10px 0;
+}
+
+.highlight {
+	background: #fff666;
+	color: #222;
+	width: auto;
+	display: inline;
+	padding: 2px 3px;
+	font-weight: normal;
+}
+
+hr {
+	margin: 20px 0 30px;
+	border: 0;
+	border-bottom: 1px dotted #ddd;
+	height: 1px;
+}

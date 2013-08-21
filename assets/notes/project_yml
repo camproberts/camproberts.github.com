@@ -1,0 +1,34 @@
+Project YAML
+
+project_title:
+project_intro:
+project_content:
+project_imgs:
+project_vid:
+    
+    
+company: 
+poc_name:
+company_url:
+
+list of blog posts for a given project
+would love to build a js service to pull the vcards for people in our community from a server somewhere
+
+
+Blog YAML
+
+comment_count: // may use disqus method found here: http://help.disqus.com/customer/portal/articles/565624
+
+Common Variables
+
+post.date | date_to_string
+post.author
+post.comment_count
+post.share_twitter
+post.share_facebook
+post.share_google
+post.project_tag
+
+
+
+

@@ -1,0 +1,16 @@
+<div id="recent-posts-2" class="footer-widget widget_recent_entries">
+	<h2 class="widgettitle">
+		Partners
+	</h2>
+	<ul>
+		<li>
+			<a href="http://npsrelief.org" title="Naval Postgraduate School Field Exploration">Naval Postgraduate School</a>
+		</li>
+		<li>
+			<a href="http://www.ndu.edu/ctnsp/" title="CTNSP @ National Defense University">NDU Center for Technology and National Security Policy</a>
+		</li>
+		<li>
+			<a href="http://star-tides.net" title="STAR-TIDES Network">STAR-TIDES Network</a>
+		</li>
+	</ul>
+</div>

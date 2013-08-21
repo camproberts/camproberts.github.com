@@ -1,0 +1,24 @@
+<div class="menu-header-container">
+	<ul id="nav" class="nav">
+		<li id="menu-item-home" class="menu-item menu-item-type-custom menu-item-object-custom {% if page.url == node.url %}current-menu-item current_page_item{% endif %} menu-item-home">
+			<a href="{{ BASE_PATH }}/index.html">Home</a>
+		</li>
+		<li id="menu-item-about" class="menu-item menu-item-type-custom menu-item-object-custom {% if page.url == node.url %}current-menu-item current_page_item{% endif %} menu-item-about">
+			<a href="{{ BASE_PATH }}/about/">About</a>
+		</li>
+		
+		<li id="menu-item-projects" class="menu-item menu-item-type-custom menu-item-object-custom {% if page.url == node.url %}current-menu-item current_page_item{% endif %} menu-item-projects">
+			<a href="{{ BASE_PATH }}/projects/">Projects</a>
+		</li>
+		
+		<li id="menu-item-blog" class="menu-item menu-item-type-custom menu-item-object-custom {% if page.url == node.url %}current-menu-item current_page_item{% endif %} menu-item-blog">
+			<a href="{{ BASE_PATH }}/blog/">Blog</a>
+		</li>
+		<!--
+		<li id="menu-item-contact" class="menu-item menu-item-type-custom menu-item-object-custom {% if page.url == node.url %}current-menu-item current_page_item{% endif %} menu-item-contact">
+			<a href="{{ BASE_PATH }}/contact/">Contact</a>
+		</li>
+		
+		-->
+	</ul>
+</div>

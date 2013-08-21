@@ -1,0 +1,23 @@
+		<link rel="shortcut icon" href="{{site.favicon}}">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+		<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="{{ASSET_PATH}}slate/includes/ie/ie.css?5ba967" /> <![endif]-->
+		<link rel="alternate" type="application/rss+xml" title="RELIEF » Feed" href="{{site.rssurl}}">
+		
+		<link rel='stylesheet' id='slate_style-css' href="{{ASSET_PATH}}slate/style.css" type='text/css' media='all'>
+		<link rel='stylesheet' id='slate_media_queries-css' href="{{ASSET_PATH}}slate/media-queries.css" type='text/css' media='all'>
+		<link rel='stylesheet' id='flex_css-css' href="{{ASSET_PATH}}slate/includes/js/flex/flexslider.css" type='text/css' media='screen'>
+		<link rel='stylesheet' id='font_awesome_css-css' href="{{ASSET_PATH}}slate/includes/fonts/fontawesome/font-awesome.css" type='text/css' media='screen'>
+		<link rel='stylesheet' id='google_merriweather-css' href='http://fonts.googleapis.com/css?family=Merriweather%3A400%2C700&amp;ver=3.5' type='text/css' media='all'>
+		
+<script type='text/javascript' src="{{ASSET_PATH}}slate/includes/js/comment-reply.min.js"></script>
+<script type='text/javascript' src="{{BASE_PATH}}assets/js/jquery-2.0.2.min.js"></script>
+<script type='text/javascript' src="{{ASSET_PATH}}slate/okay-toolkit/includes/js/chirp/chirp.min.js"></script>
+		
+		<meta name="generator" content="Jekyll on GitHub Pages">
+		<link rel='canonical' href='http://{{BASE_PATH}}'>
+		<style type="text/css">
+a{color:#60BDDB
+		}
+		</style>
+		<link rel='stylesheet' id='okaysocial_style-css' href="{{ASSET_PATH}}slate/okay-toolkit/includes/css/social-style.css" type='text/css' media='all'>
+		<link rel='stylesheet' id='okaysocial_icon_style-css' href="{{ASSET_PATH}}slate/okay-toolkit/includes/css/social-icons.css" type='text/css' media='all'>

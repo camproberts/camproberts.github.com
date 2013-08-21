@@ -1,0 +1,8 @@
+<script type='text/javascript' src="http://themes.okaythemes.com/slate/wp-content/plugins/contact-form-7/includes/js/scripts.js?5ba967"></script>
+<script type='text/javascript'>var custom_js_vars={"flexslider_auto":"disabled"};</script>
+<script type='text/javascript' src="{{ASSET_PATH}}slate/includes/js/custom/custom.js?5ba967"></script>
+<script type='text/javascript' src="{{ASSET_PATH}}slate/includes/js/flex/jquery.flexslider.js?5ba967"></script>
+<script type='text/javascript' src="{{ASSET_PATH}}slate/includes/js/tabs/jquery.tabs.min.js?5ba967"></script>
+<script type='text/javascript' src="{{ASSET_PATH}}slate/includes/js/fitvid/jquery.fitvids.js?5ba967"></script>
+<script type='text/javascript' src="{{ASSET_PATH}}slate/includes/js/menu/jquery.mobilemenu.js?5ba967"></script>
+<script type="text/javascript" src="{{ASSET_PATH}}slate-child/includes/js/custom/switch.js?5ba967"></script>

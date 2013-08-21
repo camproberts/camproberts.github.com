@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en-US">
+	<!-- HEAD ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{page.title}}</title>
+		{% include custom/slate/styles %}
+
+		<script type="text/javascript">
+		    var disqus_shortname = '{{ site.JB.comments.disqus.short_name }}'; // required: replace example with your forum shortname
+		    {% if page.wordpress_id %}var disqus_identifier = '{{page.wordpress_id}} {{site.production_url}}/?p={{page.wordpress_id}}';{% else %}var disqus_identifier = '{{page.id}}';{% endif %}
+
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		    })();
+		</script>
+
+		
+	</head>
+	
+    <!-- BODY ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+	<body class="home page page-template page-template-homepage-php">
+		<div class="main-wrapper">
+			
+			<!-- HEADER ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+			
+			<!-- header wrapper -->
+			<div class="header-wrapper">
+				
+				<!--- hidden area -->
+				{% include custom/slate/hiddenheader %}
+				<!-- end hidden area -->
+				
+				<!-- header -->
+				<div class="header">
+					<div class="header-left">
+						<h1 class="logo-text">
+							<a href="http://camproberts.org" title="Humanitarian Experiments at Camp Roberts">JIFX</a>
+						</h1>
+					</div>
+					<div class="header-right">
+						
+						<!-- menu -->
+						<!-- include menu with active page -->
+						{% include custom/slate/menu %}
+						
+						<div class="clear"></div>
+						<!-- end menu -->
+						
+					</div><!-- end header right -->
+					<div class="clear"></div>
+				</div><!-- end header -->
+			</div><!-- end header wrapper -->
+			
+			<!-- SECTIONS ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+
+			<div id="sections" class="clearfix">
+				
+				<!-- page title -->
+				<div class="page-title page-title-portfolio">
+					<h2>
+						{{ page.title}}
+					</h2>
+					<h3>
+						{{ page.tagline}}
+					</h3>
+				</div>
+				<!-- end page title -->
+				
+				{{ content }}
+				
+				
+			<div class="clear"></div>
+			</div><!-- end sections clearfix -->
+			
+			
+			<!-- FOOTER ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+			<!-- footer -->
+			<div class="footer-widgets clearfix">
+				
+				<!-- footer 3 col section -->
+				<div class="footer-widgets-wrap clearfix">
+					
+					<!-- 1 footerwidget_about -->
+					{% include custom/slate/footerwidget_about %}
+					
+					<!-- 2 footerwidget_partners -->
+					{% include custom/slate/footerwidget_partners %}
+					
+					<!--  3 footerwidget_twitter -->
+					{% include custom/slate/footerwidget_twitter %}
+					
+				</div><!-- end footer widgets wrap -->
+			</div><!-- end footer widgets -->
+			<div class="clear"></div>
+			
+			<!-- footer 1 col full width -->
+			<div class="footer">
+				<div class="footer-text">
+					<div class="footer-text-center">
+						<!--  3 footermenu_center -->
+						{% include custom/slate/footer_copyright %}
+					</div><!-- end footer center -->
+					<div class="clear"></div>
+				</div><!-- end footer-text -->
+			</div><!-- end footer -->
+		</div><!-- end main wrapper -->
+
+
+<!-- SCRIPTS ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+{% include custom/slate/scripts %}
+
+</body>
+</html>

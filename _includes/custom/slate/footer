@@ -1,0 +1,52 @@
+			<!-- footer -->
+			<div class="footer-widgets clearfix">
+				
+				<!-- footer 3 col section -->
+				<div class="footer-widgets-wrap clearfix">
+					<div id="text-4" class="footer-widget widget_text">
+						<h2 class="widgettitle">
+							About RELIEF
+						</h2>
+						<div class="textwidget">
+							<p>
+							About RELIEF here.
+							</p>
+						</div>
+					</div>
+					<div id="recent-posts-2" class="footer-widget widget_recent_entries">
+						<h2 class="widgettitle">
+							Recent Posts
+						</h2>
+						<ul>
+						<!-- write recent posts code -->
+							<li>
+								<a href="http://themes.okaythemes.com/slate/2011/10/03/browser/" title="The Great Browser Experiment">The Great Browser Experiment</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div id="ok-twitter-4" class="footer-widget ok-twitter">
+						<div class="twitter-widget">
+							<h2 class="widgettitle">
+								On Twitter
+							</h2><!-- insert Twitter widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+			<!-- footer 1 col full width -->
+			<div class="footer">
+				<div class="footer-text">
+					<div class="footer-text-left">
+					{{site.footer_left}}
+					</div>
+					<div class="footer-text-right">
+						<div class="copyright">
+							© 2013 STAR-TIDES | Modified <a href="http://themes.okaythemes.com/slate">Slate</a>, a Theme by Okay
+						</div>
+					</div><!-- end footer right -->
+					<div class="clear"></div>
+				</div><!-- end footer-text -->
+			</div><!-- end footer -->

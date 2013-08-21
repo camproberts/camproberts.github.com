@@ -1,0 +1,11 @@
+<!-- slider -->
+<div class="section section-slider">
+	<div class="flexslider">
+		<ul class="slides">
+		{% for slideri in page.slider %}
+		<li><a href="{{ BASE_PATH }}/assets/{{ slideri['src'] }}" title="{{ slideri['title'] }}"><img width="{{ slideri['w'] }}" height="{{ slideri['h'] }}" src="{{ BASE_PATH }}/assets/{{ slideri['src'] }}" class="attachment-large-image" alt="{{ slideri['alt'] }}"></a>
+		</li>
+		{% endfor %}
+		</ul>
+	</div><!-- end flexslider -->
+</div>

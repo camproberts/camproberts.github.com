@@ -1,0 +1,26 @@
+<!-- services 3 cols x 2 rows, order goes left to right, then repeats every 3 cols -->
+<div class="section section-services">
+	<div class="section-title">
+		<span>{services.title}</span>
+	</div>
+	<div class="services-wrap" id="equalize">
+		{% foreach entry in services.entries}
+	
+		<div id="ok-text-column-{forloop.index++}" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						{{entry.title}}
+					</h3>
+				</div>
+				<div class="clear"></div>
+				<p>
+				{{entry.content}}
+				</p>
+			</div>
+		</div>
+		{ % endfor %}	
+		<div style="clear:both;"></div>
+	</div>
+</div>
+<!-- end services -->

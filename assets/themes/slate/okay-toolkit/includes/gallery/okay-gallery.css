@@ -1,0 +1,24 @@
+#okay_gallery_meta_box {
+	display: none;
+}
+
+.okay-gallery-thumbs {
+	margin-top: 10px;
+	*display: inline-block;
+  height: 1%;
+}
+
+.okay-gallery-thumbs li {
+	float: left;
+	list-style: none;
+	margin: 0 5px 5px 0;
+}
+
+.okay-gallery-thumbs:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}

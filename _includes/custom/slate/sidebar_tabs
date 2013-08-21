@@ -1,0 +1,80 @@
+	<!-- widget 1: tabbed -->
+	<div id="ok-recent-widgets-3" class="widget ok-recent-posts">
+		<div class="okay-recent-posts">
+			<ul class="tab-wrapper tabs">
+				<li><a class="current" href="#"><i class="icon-file-alt"></i></a></li>
+				<li><a class="" href="#"></span><i class="icon-heart"></i></a></li>
+				<li><a class="" href="#"><i class="icon-comment"></i></a></li>
+				<li><a class="" href="#"><i class="icon-tag"></i></a></li>
+			</ul>
+			
+			<div class="clear"></div>
+			
+			<!-- pane 1 -->
+			<div class="panes">
+				<div class="pane">
+					<ul class="recent-posts-widget">
+						<li class="recent-posts">
+							<h3><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/">The Great Browser Experiment</a></h3>
+							<p><a href="http://themes.okaythemes.com/slate/2011/10/03/browser//#comments" title="comments">4 Comments</a></p></li>
+						<li class="recent-posts">
+							<h3><a href="http://themes.okaythemes.com/slate/2012/01/30/book/">My Latest Favorite Book</a></h3>
+							<p><a href="http://themes.okaythemes.com/slate/2012/01/30/book//#comments" title="comments">3 Comments</a></p>
+						</li>
+						<li class="recent-posts">
+							<h3><a href="http://themes.okaythemes.com/slate/2011/10/04/my-review/">A Review of Mountain Lion</a></h3>
+							<p><a href="http://themes.okaythemes.com/slate/2011/10/04/my-review//#comments" title="comments">3 Comments</a></p>
+						</li>
+						<li class="recent-posts">
+							<h3><a href="http://themes.okaythemes.com/slate/2011/10/04/network-video/">Just An Animated Video</a></h3>
+							<p><a href="http://themes.okaythemes.com/slate/2011/10/04/network-video//#comments" title="comments">No Comments</a></p>
+							</li>
+					</ul>
+				</div>
+			
+			<!-- pane 2 -->
+			<div class="pane">
+				<ul class="recent-posts-widget">
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/">The Great Browser Experiment</a></h3>
+						<p><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/" rel="bookmark" title="The Great Browser Experiment">4 Comments</a></p></li>
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2012/01/30/book/">My Latest Favorite Book</a></h3>
+						<p><a href="http://themes.okaythemes.com/slate/2012/01/30/book/" rel="bookmark" title="My Latest Favorite Book">3 Comments</a></p></li>
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2011/10/04/my-review/">A Review of Mountain Lion</a></h3>
+						<p><a href="http://themes.okaythemes.com/slate/2011/10/04/my-review/" rel="bookmark" title="A Review of Mountain Lion">3 Comments</a></p></li>
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2011/10/04/network-video/">Just An Animated Video</a></h3>
+						<p><a href="http://themes.okaythemes.com/slate/2011/10/04/network-video/" rel="bookmark" title="Just An Animated Video">No Comments</a></p></li>
+				</ul>
+			</div>
+			
+			<!-- pane 3 -->
+			<div class="pane">
+				<ul class="recent-posts-widget">
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2012/01/30/book/#comment-1784" title="Mandi Hollis | My Latest Favorite Book">Mandi Hollis</a></h3>
+						<p class="recent-comment-text"><a href="http://themes.okaythemes.com/slate/2012/01/30/book/#comment-1784">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus nec diam laoreet sollicitudi ...</a></p></li>
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/#comment-1750" title="Mike M. | The Great Browser Experiment">Mike M.</a></h3>
+						<p class="recent-comment-text"><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/#comment-1750">Politics is the art of controlling your environment.</a></p></li>
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/#comment-1749" title="Mike M. | The Great Browser Experiment">Mike M.</a></h3>
+						<p class="recent-comment-text"><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/#comment-1749">Of all the men that have run for president in the twentieth century, only George McGovern truly unde ...</a></p></li>
+					<li class="recent-posts">
+						<h3><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/#comment-1748" title="Mandi Hollis | The Great Browser Experiment">Mandi Hollis</a></h3>
+						<p class="recent-comment-text"><a href="http://themes.okaythemes.com/slate/2011/10/03/browser/#comment-1748">If I'd written all the truth I knew for the past ten years, about 600 people - including me - would  ...</a></p></li>
+				</ul>
+			</div>
+			
+			<!-- pane 4 -->
+			<div class="pane">
+				<div class="tagcloud"> <a href='http://themes.okaythemes.com/slate/tag/animation-2/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>animation</a> <a href='http://themes.okaythemes.com/slate/tag/apple/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>Apple</a> <a href='http://themes.okaythemes.com/slate/tag/design-2/' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>design</a> <a href='http://themes.okaythemes.com/slate/tag/helvetica/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>helvetica</a> <a href='http://themes.okaythemes.com/slate/tag/serif/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>serif</a> <a href='http://themes.okaythemes.com/slate/tag/space/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>space</a> <a href='http://themes.okaythemes.com/slate/tag/travel/' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>travel</a> <a href='http://themes.okaythemes.com/slate/tag/video-2/' class='tag-link-28' title='2 topics' style='font-size: 18pt;'>video</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+		</div>
+	</div>
+</div>

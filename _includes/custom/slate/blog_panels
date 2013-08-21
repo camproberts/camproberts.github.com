@@ -1,0 +1,36 @@
+<div class="section section-blog">
+	<div class="section-title">
+		<span>Recent Blog Posts</span>
+	</div>
+	<div class="home-blog clearfix">
+		<ul>
+			{% for node in site.categories.blogpost limit:3 %}
+			<li class="home-blog-post">
+			{% if node.postimg_src %}
+				<div class="blog-thumb">
+					<a href="{{node.url}}" title="{{node.title}}"><img width="360" src="{{ BASE_PATH }}/assets/{{node.postimg_src}}" class="attachment-blog-thumb wp-post-image" alt="{{node.postimg_alt}}"></a>
+				</div>
+			{% endif %}
+				<div class="blog-title">
+					<div class="big-comment">
+						<h3>
+							<a href="{{node.url}}">{{node.title}}</a>
+						</h3>
+					</div>
+					<p class="home-blog-post-meta">
+						{{node.date | date_to_string }}
+					</p>
+				</div>
+				<div class="clear"> </div>
+				<div class="excerpt">
+					<p>{{node.excerpt}}</p>
+				</div>
+				<div class="clear"></div>
+				<div class="blog-read-more">
+					<a href="{{node.url}}">Read More</a>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

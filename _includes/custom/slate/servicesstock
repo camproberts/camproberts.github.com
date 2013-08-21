@@ -1,0 +1,77 @@
+<div class="section section-services">
+
+	<div class="section-title"> 
+	<span> What We Can Do </span>
+	</div>
+
+	<div class="services-wrap" id="equalize">
+	
+		<div id="ok-text-column-2" class="column ok-text-column">
+			<div class="services"> 
+				<div class="services-title">
+				<h3><a href="http://themes.okaythemes.com/slate/about/">This theme comes with batteries included.</a></h3>
+				</div>
+
+				<div class="clear"> </div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ac purus nec diam. Lorem ipsum dolor sit amet, consectet lorem ipsum.</p>
+			</div>
+		</div>
+
+		<div id="ok-text-column-3" class="column ok-text-column">
+			<div class="services"> 
+				<div class="services-title">
+				<h3><a href="http://themes.okaythemes.com/slate/about/">This theme comes with batteries included.</a></h3>
+				</div>
+
+				<div class="clear"> </div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ac purus nec diam. Lorem ipsum dolor sit amet, consectet lorem ipsum.</p>
+			</div>
+		</div>
+
+		<div id="ok-text-column-4" class="column ok-text-column">
+			<div class="services"> 
+				<div class="services-title">
+				<h3><a href="http://themes.okaythemes.com/slate/about/">This theme comes with batteries included.</a></h3>
+				</div>
+
+				<div class="clear"> </div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ac purus nec diam. Lorem ipsum dolor sit amet, consectet lorem ipsum.</p>
+			</div>
+		</div>
+
+		<div id="ok-text-column-5" class="column ok-text-column">
+			<div class="services"> 
+				<div class="services-title">
+				<h3><a href="http://themes.okaythemes.com/slate/about/">This theme comes with batteries included.</a></h3>
+				</div>
+
+				<div class="clear"> </div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ac purus nec diam. Lorem ipsum dolor sit amet, consectet lorem ipsum.</p>
+			</div>
+		</div>
+
+		<div id="ok-text-column-6" class="column ok-text-column">
+			<div class="services"> 
+				<div class="services-title">
+				<h3><a href="http://themes.okaythemes.com/slate/about/">This theme comes with batteries included.</a></h3>
+				</div>
+
+				<div class="clear"> </div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ac purus nec diam. Lorem ipsum dolor sit amet, consectet lorem ipsum.</p>
+			</div>
+		</div>
+
+		<div id="ok-text-column-7" class="column ok-text-column">
+			<div class="services"> 
+				<div class="services-title">
+				<h3><a href="http://themes.okaythemes.com/slate/about/">This theme comes with batteries included.</a></h3>
+				</div>
+
+				<div class="clear"> </div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipis elit. Donec ac purus nec diam. Lorem ipsum dolor sit amet, consectet lorem ipsum.</p>
+			</div>
+		</div>
+
+		<div style="clear:both;"></div>
+	</div>
+</div>

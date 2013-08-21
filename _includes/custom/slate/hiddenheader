@@ -1,0 +1,20 @@
+<!-- ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+<div class="header-hidden-wrap">
+				<div class="header-hidden-toggle-wrap">
+					<div class="header-hidden clearfix">
+						<div class="header-hidden-left">
+							RELIEF/JIFX is a partnership of NPS and NDU. This is an unofficial web site. <a href="{{BASE_PATH}}about/">More</a>
+						</div>
+						<div class="header-hidden-right">
+							<div id="ok-icons-widget-2" class="icons">
+								<div class="icons-widget">
+									<div id="icons" class="">
+										<a href="http://twitter.com/jifx" class="twitter-icon" title="Twitter"></a> <a href="#" class="facebook-icon" title="Facebook"></a> <a href="#" class="vimeo-icon" title="Vimeo"></a> <a href="#" class="google-icon" title="Google"></a> <a href="http://profiles.wordpress.org/okaythemes" class="wordpress-icon" title="WordPress"></a>
+									</div><!-- end icons -->
+								</div><!-- end icons-widget -->
+							</div><!-- end icons-widget2 -->
+						</div><!-- end header-hidden-right -->
+					</div><!-- end header-hidden-->
+					<a href="#" class="hidden-toggle"><i class="icon-plus"></i></a>
+				</div><!-- end header-hidden-toggle-wrap -->
+			</div>

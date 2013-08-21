@@ -1,0 +1,99 @@
+<!-- services 3 cols x 2 rows, order goes left to right, then repeats every 3 cols -->
+
+<div class="section section-services">
+
+	<!-- services title -->
+	<div class="section-title">
+		<span>How We Work</span>
+	</div>
+	<!-- end services title -->
+
+	<div class="services-wrap" id="equalize">
+		
+		<div id="ok-text-column-1" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						title
+					</h3>
+				</div>
+				<div class="clear"> </div>
+				<p>
+				Lorem ipsum dolor est
+				</p>
+			</div>
+		</div>
+		
+		<div id="ok-text-column-2" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						title
+					</h3>
+				</div>
+				<div class="clear"> </div>
+				<p>
+				Lorem ipsum dolor est
+				</p>
+			</div>
+		</div>
+		
+		<div id="ok-text-column-3" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						title
+					</h3>
+				</div>
+				<div class="clear"> </div>
+				<p>
+				Lorem ipsum dolor est
+				</p>
+			</div>
+		</div>
+
+		<div id="ok-text-column-4" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						title
+					</h3>
+				</div>
+				<div class="clear"> </div>
+				<p>
+				Lorem ipsum dolor est
+				</p>
+			</div>
+		</div>
+		
+		<div id="ok-text-column-5" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						title
+					</h3>
+				</div>
+				<div class="clear"> </div>
+				<p>
+				Lorem ipsum dolor est
+				</p>
+			</div>
+		</div>
+		
+		<div id="ok-text-column-6" class="column ok-text-column">
+			<div class="services">
+				<div class="services-title">
+					<h3>
+						title
+					</h3>
+				</div>
+				<div class="clear"> </div>
+				<p>
+				Lorem ipsum dolor est
+				</p>
+			</div>
+		</div>
+	
+	<div style="clear:both;"> </div>
+	</div><!-- end services-wrap -->
+</div>

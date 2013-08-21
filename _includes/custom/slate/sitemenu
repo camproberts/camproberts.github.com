@@ -1,0 +1,19 @@
+<div class="menu-header-container">
+	<ul id="nav" class="nav">
+		<li id="menu-home" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/index.html">Home</a>
+		</li>
+		<li id="menu-about" class="menu-item menu-item-type-post_type menu-item-object-page">
+			<a href="{{site.about_url}}">About</a>
+		</li>
+		<li id="menu-projects" class="menu-item menu-item-type-post_type menu-item-object-page">
+			<a href="{{site.projects_url}}">Projects</a>
+		</li>
+		<li id="menu-blog" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item  current_page_item current_page_parent">
+			<a href="{{site.blog_url}}">Blog</a>
+		</li>
+		<li id="menu-contact" class="menu-item menu-item-type-post_type menu-item-object-page">
+			<a href="{{site.contact_url}}">Contact</a>
+		</li>
+	</ul>
+</div>

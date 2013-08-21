@@ -1,0 +1,9 @@
+<div id="ok-twitter-4" class="footer-widget ok-twitter">
+	<div class="twitter-widget">
+		<h2 class="widgettitle">
+			On Twitter
+		</h2><script type="text/javascript">
+/*<![CDATA[*/Chirp({user:'jcrowley',max:1,cacheExpire:1000*60*2,templates:{base:'<ul class="chirp">{{tweets}}<\/ul>',tweet:'<li><p><a class="chirp-avatar" href="http://twitter.com/{{user.screen_name}}" title="{{user.name}} ? {{user.description}}"><img alt="profile-image" src="{{user.profile_image_url}}"><\/a> {{html}}<\/p><span class="meta"><time><a href="http://twitter.com/{{user.screen_name}}/statuses/{{id_str}}">{{time_ago}}<\/a><\/time> &mdash; via <a href="http://twitter.com/{{user.screen_name}}" title="{{user.name}} ? {{user.description}}">{{user.name}}<\/a><\/span><\/li>'}})/*]]>*/
+		</script>
+	</div>
+</div>
