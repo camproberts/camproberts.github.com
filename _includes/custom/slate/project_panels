@@ -1,7 +1,7 @@
 <div class="section section-blog">
 	<div class="home-blog clearfix">
 		<ul>
-			{% for node in site.categories.blog limit:3 %}
+			{% for node in site.categories.project %}
 			<li class="home-blog-post">
 			{% if node.postimg_src %}
 				<div class="blog-thumb">

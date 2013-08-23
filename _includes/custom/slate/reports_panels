@@ -1,0 +1,23 @@
+<div class="section section-blog">
+	<div class="section-title">
+		<span>Reports</span>
+	</div>
+	<div class="home-blog clearfix">
+		<ul>
+			{% for node in site.categories.report %}
+			<li class="home-blog-post">
+				<div class="blog-title">
+					<div class="big-comment">
+						<h3>
+							<a href="{{node.url}}">{{node.title}}</a>
+						</h3>
+					</div>
+					<p class="home-blog-post-meta">
+						{{node.date | date_to_string }}
+					</p>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

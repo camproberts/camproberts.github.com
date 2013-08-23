@@ -10,7 +10,7 @@
 	</head>
 	
     <!-- BODY ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
-	<body class="home page page-template page-template-homepage-php">
+	<body class="single single-okay-portfolio single-format-standard">
 		<div class="main-wrapper">
 			
 			<!-- HEADER ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
@@ -26,7 +26,7 @@
 				<div class="header">
 					<div class="header-left">
 						<h1 class="logo-text">
-							<a href="http://camproberts.org" title="Humanitarian Experiments at Camp Roberts">JIFX</a>
+							<a href="http://camproberts.org" title="Humanitarian Experiments at Camp Roberts">Unofficial JIFX</a>
 						</h1>
 					</div>
 					<div class="header-right">
@@ -75,14 +75,15 @@
 	            <li class="next">
 	            <a href="{{ site.baseurl }}{{ prev.url }}">{{ prev.title }}&rarr;</a>
 	            </li>
-		<span class="next-project"><a href="{{ BASE_PATH }}{{ prev.url }}" rel="next" title="{{ prev.title }}"><span>Next <i class="icon-caret-right"></i></span></a></span></div>
+		<span class="next-project"><a href="{{ BASE_PATH }}{{ prev.url }}" rel="next" title="{{ prev.title }}"><span>Next <i class="icon-caret-right"></i></span></a></span>
 	        {% endunless %}
 	    {% endif %}
 	    {% assign prev = post %}
 	{% endfor %}
+	</div>
 	
 	
-	<!-->
+	<!--
 	<div class="project-nav">
 	{% if page.previous %}
 	<span class="prev-project"><a href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prev" title="{{ page.previous.title }}"><span><i class="icon-caret-left"></i> Previous</span></a></span>
