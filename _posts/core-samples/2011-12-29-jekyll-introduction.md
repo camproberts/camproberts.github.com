@@ -1,21 +1,21 @@
 ---
 layout: post
-category : project
+category : blog
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
+title: Jekyll
 
 postimg_src: images/it-looks-better-on-retina-800x448.jpeg
 postimg_w: 900
 postimg_h: 506
 postimg_alt: "NPS UAV Swarm Experiment"
 
+project_event: 13-04
+project_category: [communications, situational awareness]
+
 ---
-
-This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
-Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
-
+This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it. Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
 <!--more-->
-
 ## Overview 
 
 ### What is Jekyll?

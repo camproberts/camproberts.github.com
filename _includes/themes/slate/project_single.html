@@ -1,21 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en-US">
+	<!-- HEAD ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{page.title}}</title>
+		{% include custom/slate/styles %}
+	
+	</head>
+	
+    <!-- BODY ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+	<body class="home page page-template page-template-homepage-php">
+		<div class="main-wrapper">
+			
+			<!-- HEADER ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+			
+			<!-- header wrapper -->
+			<div class="header-wrapper">
+				
+				<!--- hidden area -->
+				{% include custom/slate/hiddenheader %}
+				<!-- end hidden area -->
+				
+				<!-- header -->
+				<div class="header">
+					<div class="header-left">
+						<h1 class="logo-text">
+							<a href="http://camproberts.org" title="Humanitarian Experiments at Camp Roberts">JIFX</a>
+						</h1>
+					</div>
+					<div class="header-right">
+						
+						<!-- menu -->
+						<!-- include menu with active page -->
+						{% include custom/slate/menu %}
+						
+						<div class="clear"></div>
+						<!-- end menu -->
+						
+					</div><!-- end header right -->
+					<div class="clear"></div>
+				</div><!-- end header -->
+			</div><!-- end header wrapper -->
+			
+			<!-- SECTIONS ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+
+			<div id="sections" class="clearfix">
+				
+
+
+
 <!-- container -->
 
   <div class="container">
     <div class="page-title page-title-portfolio">
       <div class="portfolio-titles">
-        <h2><a href="http://themes.okaythemes.com/slate/portfolio-item/a-view-from-my-standing-desk/">A View From My Standing Desk</a></h2>
+        <h2>{{page.title}}</h2>
       </div>
 	
 	<!-- portfolio nav -->
+	{% for category in site.categories.project %}
+	    {% assign catg_name = category.first %}
+	    {% if catg_name == page.category %}
+	        {% assign catg_posts = category.last %}
+	    {% endif %}
+	{% endfor %}
+	{% for post in catg_posts %}
+	    {% if post.title == page.title %}
+	        {% unless forloop.last %}
+	            {% assign next = catg_posts[forloop.index] %}
+		<span class="prev-project"><a href="{{ BASE_PATH }}{{ next.url }}" rel="prev" title="{{ next.title }}"><span><i class="icon-caret-left"></i> Previous</span></a></span>
+	        {% endunless %}
+	        {% unless forloop.first %}
+	            <li class="next">
+	            <a href="{{ site.baseurl }}{{ prev.url }}">{{ prev.title }}&rarr;</a>
+	            </li>
+		<span class="next-project"><a href="{{ BASE_PATH }}{{ prev.url }}" rel="next" title="{{ prev.title }}"><span>Next <i class="icon-caret-right"></i></span></a></span></div>
+	        {% endunless %}
+	    {% endif %}
+	    {% assign prev = post %}
+	{% endfor %}
+	
+	
+	<!-->
+	<div class="project-nav">
+	{% if page.previous %}
+	<span class="prev-project"><a href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prev" title="{{ page.previous.title }}"><span><i class="icon-caret-left"></i> Previous</span></a></span>
+	{% else %}
+	<span class="prev-project"></span>
+	{% endif %}
 
-      <div class="project-nav"> <span
-class="prev-project"><a
-href="http://themes.okaythemes.com/slate/portfolio-item/dead-head-animated-video/" rel="prev"><span><i
-class="icon-caret-left"></i> Previous</span></a></span> <span
-class="next-project"><a
-href="http://themes.okaythemes.com/slate/portfolio-item/modern-branding-package/" rel="next"><span>Next <i
-class="icon-caret-right"></i></span></a></span></div>
-    </div>
+	{% if page.next %}
+	<span class="next-project"><a href="{{ BASE_PATH }}{{ page.next.url }}" rel="next" title="{{ page.next.title }}"><span>Next <i class="icon-caret-right"></i></span></a></span></div>
+	{% else %}
+	<span class="next-project"> </span>
+	{% endif %}	
+	</div>
+	-->
 
 	<!-- end portfolio nav -->
 
@@ -23,7 +104,7 @@ class="icon-caret-right"></i></span></a></span></div>
 	
 	<!-- portfolio slider -->
     <div class="portfolio-big-slide">
-      	<div class="portfolio-block-large clearfix"> <a href="http://themes.okaythemes.com/slate/portfolio-item/a-view-from-my-standing-desk/" title="A View From My Standing Desk" class="portfolio-large-image"><img width="980" height="607" src="http://cdn4.okaythemes.com/slate/files/2013/03/DSCF0492.jpg" class="attachment-large-image wp-post-image" alt="DSCF0492" /></a>
+      	<div class="portfolio-block-large clearfix"><img width="980" height="607" src="{{ BASE_PATH }}/assets/{{page.postimg_src}}" class="attachment-large-image wp-post-image" alt="page.postimg_alt" /></a>
 		</div>
     </div>
 	<!-- end portfolio slider -->
@@ -31,11 +112,9 @@ class="icon-caret-right"></i></span></a></span></div>
     <div class="content content-tablet">
       <div class="blog-entry">
         <div class="blog-content">
-          	<div class="intro">A desk is a generally wooded piece of furniture and a type of useful table often used in a school or office setting for various academic activities such as reading or writing on or using a computer.
+          	<div class="intro">{{page.excerpt | markdownify}}
 			</div><!-- end intro -->
-
-          <p>Desks often have one or more drawers, compartments, or pigeon holes to store office supplies and papers. Unlike a regular table, usually only one side of a desk is suitable to sit on. Not all desks have the form of a table.</p>
-          <p>For instance, an armoire desk is a desk built within a large wardrobe-like cabinet, and a portable desk is light enough to be placed on a person&#8217;s lap. Since many people lean on a desk while using it, a desk must be sturdy.</p>
+			{{content}}
         </div><!-- end blog-content-->
       </div><!-- end blog entry -->
     </div><!-- end content-->
@@ -45,13 +124,58 @@ class="icon-caret-right"></i></span></a></span></div>
       <div class="portfolio-meta">
         <h3>Project Details</h3>
         <ul class="portfolio-meta-links">
-          <li> <span>Date:</span> March 8, 2013</li>
-          <li><span>Category: </span><a
-href="http://themes.okaythemes.com/slate/categories/branding/" rel="tag">Branding</a><br/>
-            <a
-href="http://themes.okaythemes.com/slate/categories/photography/" rel="tag">Photography</a></li>
+          <li> <span>Date:</span>{{page.project_event}}</li>
+          <li><span>Category: </span>
+	{% for projectcat in page.project_category %}
+	{{projectcat}} <br />
+	{% endfor %}
+		  </li>
         </ul>
       </div><!-- end portfolio meta -->
     </div><!-- end portfolio sidebar -->
   </div><!-- end page-title -->
   <div class="clear"></div>
+
+</div><!-- end sections clearfix -->
+
+
+<!-- FOOTER ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+<!-- footer -->
+<div class="footer-widgets clearfix">
+	
+	<!-- footer 3 col section -->
+	<div class="footer-widgets-wrap clearfix">
+		
+		<!-- 1 footerwidget_about -->
+		{% include custom/slate/footerwidget_about %}
+		
+		<!-- 2 footerwidget_partners -->
+		{% include custom/slate/footerwidget_partners %}
+		
+		<!--  3 footerwidget_twitter -->
+		{% include custom/slate/footerwidget_twitter %}
+		
+	</div><!-- end footer widgets wrap -->
+</div><!-- end footer widgets -->
+<div class="clear"></div>
+
+<!-- footer 1 col full width -->
+<div class="footer">
+	<div class="footer-text">
+		<div class="footer-text-center">
+			<!--  3 footermenu_center -->
+			{% include custom/slate/footer_copyright %}
+		</div><!-- end footer center -->
+		<div class="clear"></div>
+	</div><!-- end footer-text -->
+</div><!-- end footer -->
+</div><!-- end main wrapper -->
+
+
+<!-- SCRIPTS ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~ -->
+{% include custom/slate/scripts %}
+
+</body>
+</html>
+
+

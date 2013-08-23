@@ -7,13 +7,11 @@
 		<ul class="portfolio-blocks">
 		
 		{% for node in site.categories.report limit:9 %}
-		<p>test</p>
 			<li class="portfolio-block">
 				<div class="portfolio-block-inside">
 					<a href="{{node.url}}" title="{{node.title}}"><img width="450" height="309" src="{{ BASE_PATH }}/assets/{{node.postimg_src}}" class="attachment-blog-thumb wp-post-image" alt="{{node.postimg_alt}}"></a>
 				</div>
 			</li>
-			
 		{% endfor %}
 		
 		</ul>

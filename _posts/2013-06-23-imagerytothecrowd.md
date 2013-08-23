@@ -1,12 +1,13 @@
 ---
 # metadata
 id: 20130623_imagerytothecrowd
-layout: post
-category : blogpost
+layout: project
+category : project
 tagline: "Satellite imagery for crowdsourcing"
 tags : [crowdsourcing, openstreetmap, state, nga]
 title: Imagery to the Crowd
 author: 'John Crowley'
+intro: How to repeat OpenStreetMap in Haiti?
 
 # tags and categories
 project_tags: [1204-a1, 1203-a2]

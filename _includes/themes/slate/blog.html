@@ -23,39 +23,27 @@
 				<!-- metadata date/categories/tags -->
 				<ul class="meta-links">
 					<li>{{page.date | date_to_string }}</li>
-					<li><a href="http://themes.okaythemes.com/slate/author/mikemcalister/" title="Posts by Mike McAlister" rel="author">{{node.author }}</a></li>
-					<li><a href="#disqus_thread" data-disqus-identifier="article_1_identifier"">3 Comments</a></li>
+					<li>{{node.author }}</li>
+					<li><a href="{{page.url}}#disqus_thread" data-disqus-identifier="{{page.id}}"></a></li>
 				</ul>
 
-				<ul class="meta-links">
-					<li class="share-title">Category:</li>
-					<li> <a href="http://themes.okaythemes.com/slate/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a></li>
-					<li></li>
-					<li class="share-title meta-tag-title">Tag:</li>
-					<li> <a href="http://themes.okaythemes.com/slate/tag/design-2/" rel="tag">design</a><br />
-						 <a href="http://themes.okaythemes.com/slate/tag/space/" rel="tag">space</a>
-					</li>
-				</ul>
 
 				<!-- metadata sharing links -->
+				
 				<ul class="meta-links">
 					<li class="share-title">Share:</li>
-					<li class="twitter"> <a onclick="window.open('http://twitter.com/home?status=The Great Browser Experiment - http://themes.okaythemes.com/slate/2011/10/03/browser/','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://twitter.com/home?status=The Great Browser Experiment - http://themes.okaythemes.com/slate/2011/10/03/browser/" title="The Great Browser Experiment" target="blank">Twitter</a></li>
+					<li class="twitter"> <a onclick="window.open('http://twitter.com/home?status={{page.title}} - {{page.url}}','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://twitter.com/home?status={{page.title}} - {{page.url}}" title="The Great Browser Experiment" target="blank">Twitter</a></li>
 					<li class="facebook"> <a
-				onclick="window.open('http://www.facebook.com/share.php?u=http://themes.okaythemes.com/slate/2011/10/03/browser/','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://www.facebook.com/share.php?u=http://themes.okaythemes.com/slate/2011/10/03/browser/" title="The Great Browser Experiment"  target="blank">Facebook</a></li>
+				onclick="window.open('http://www.facebook.com/share.php?u={{page.url}}','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://www.facebook.com/share.php?u={{page.url}}" title="{{page.title}}"  target="blank">Facebook</a></li>
 					<li class="googleplus"> <a
-				class="share-google" href="https://plus.google.com/share?url=http://themes.okaythemes.com/slate/2011/10/03/browser/" onclick="window.open('https://plus.google.com/share?url=http://themes.okaythemes.com/slate/2011/10/03/browser/','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;">Google+</a></li>
+				class="share-google" href="https://plus.google.com/share?url={{page.url}}" onclick="window.open('https://plus.google.com/share?url={{page.url}}','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;">Google+</a></li>
 				</ul>
 			</div><!-- end blog meta -->
 		</div><!-- end post -->
 
-		<div class="blog-navigation">
-			<div class="alignleft"></div>
-			<div class="alignright"><a href="http://themes.okaythemes.com/slate/2012/01/30/book/" rel="next">Next Post</a></div>
-		</div><!-- end blog nav -->
 	</div><!-- end content -->
 	
-{% end for%}
+{% endfor%}
 
 <!-- ~^~ SIDEBAR ^~^~^~^~^~^~^~^~^~ -->
 	<a id="sidebar-close" href="#" title="close"></a>

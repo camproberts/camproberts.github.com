@@ -7,18 +7,6 @@
 		<title>{{page.title}}</title>
 		{% include custom/slate/styles %}
 
-		<script type="text/javascript">
-		    var disqus_shortname = '{{ site.JB.comments.disqus.short_name }}'; // required: replace example with your forum shortname
-		    {% if page.wordpress_id %}var disqus_identifier = '{{page.wordpress_id}} {{site.production_url}}/?p={{page.wordpress_id}}';{% else %}var disqus_identifier = '{{page.id}}';{% endif %}
-
-		    /* * * DON'T EDIT BELOW THIS LINE * * */
-		    (function() {
-		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		    })();
-		</script>
-
 		
 	</head>
 	
@@ -72,7 +60,6 @@
 				<!-- end page title -->
 				
 				{{ content }}
-				
 				
 			<div class="clear"></div>
 			</div><!-- end sections clearfix -->

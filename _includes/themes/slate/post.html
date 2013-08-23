@@ -24,25 +24,23 @@
 					<li>{{page.author }}</li>
 						<li><a href="{{page.url}}#disqus_thread" data-disqus-identifier="{{page.id}}"></a></li>
 				</ul>
-
+<!-- 
 				<ul class="meta-links">
 					<li class="share-title">Category:</li>
-					<li> <a href="http://themes.okaythemes.com/slate/category/blog/" title="View all posts in Blog" rel="category tag">Blog</a></li>
 					<li></li>
 					<li class="share-title meta-tag-title">Tag:</li>
-					<li> <a href="http://themes.okaythemes.com/slate/tag/design-2/" rel="tag">design</a><br />
-						 <a href="http://themes.okaythemes.com/slate/tag/space/" rel="tag">space</a>
 					</li>
 				</ul>
+-->
 
 				<!-- metadata sharing links -->
 				<ul class="meta-links">
 					<li class="share-title">Share:</li>
-					<li class="twitter"> <a onclick="window.open('http://twitter.com/home?status=The Great Browser Experiment - http://themes.okaythemes.com/slate/2011/10/03/browser/','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://twitter.com/home?status=The Great Browser Experiment - http://themes.okaythemes.com/slate/2011/10/03/browser/" title="The Great Browser Experiment" target="blank">Twitter</a></li>
-					<li class="facebook"> <a
-				onclick="window.open('http://www.facebook.com/share.php?u=http://themes.okaythemes.com/slate/2011/10/03/browser/','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://www.facebook.com/share.php?u=http://themes.okaythemes.com/slate/2011/10/03/browser/" title="The Great Browser Experiment"  target="blank">Facebook</a></li>
+					{% assign twitter_title = page.title | truncatewords:6 | downcase | replace: ' ', '' %}
+					<li class="twitter"> <a onclick="window.open('http://twitter.com/home?status={{page.title}} - #{{twitter_title}}','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://twitter.com/home?status={{page.title}} - #{{twitter_title}}" title="{{page.title}}" target="blank">Twitter</a></li>
+					<li class="facebook"> <a onclick="window.open('http://www.facebook.com/share.php?u={{page.url}}','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="http://www.facebook.com/share.php?u={{page.url}}" title="{{page.title}}"  target="blank">Facebook</a></li>
 					<li class="googleplus"> <a
-				class="share-google" href="https://plus.google.com/share?url=http://themes.okaythemes.com/slate/2011/10/03/browser/" onclick="window.open('https://plus.google.com/share?url=http://themes.okaythemes.com/slate/2011/10/03/browser/','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;">Google+</a></li>
+				class="share-google" href="https://plus.google.com/share?url={{page.url}}" onclick="window.open('https://plus.google.com/share?url={{page.url}}','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;">Google+</a></li>
 				</ul>
 			</div><!-- end blog meta -->
 		</div><!-- end post -->
@@ -74,7 +72,9 @@
 	<div id="sidebar">
 
 		<div id="okay_recent_portfolio-2" class="widget widget_okay_recent_portfolio">
-			<h2>See Also</h2>
+			<h2>Tweeting about this post</h2>
+			<h2><a class="twitter-timeline"  href="https://twitter.com/search?q=%23jifx"  data-widget-id="370545789430280192" data-chrome="nofooter noborders noscrollbar">Loading tweets...</a></h2>
+			<p><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
 		</div>
 
 	</div>

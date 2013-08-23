@@ -1,7 +1,4 @@
 <div class="section section-blog">
-	<div class="section-title">
-		<span>Recent Blog Posts</span>
-	</div>
 	<div class="home-blog clearfix">
 		<ul>
 			{% for node in site.categories.blog limit:3 %}
